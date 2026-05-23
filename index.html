@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="src/styles/global.css" />
+  <link rel="stylesheet" href="src/styles/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#hero" class="logo">Khushnuma Parveen<span class="logo-dot">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Khushnuma Parveen</h1>
+      <h2 class="hero-title">Machine Learning Engineer &amp; Software Engineer</h2>
+      <p class="hero-bio">I craft beautiful digital experiences with clean code and thoughtful design.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-animation">
+      <!-- Animated avatar placeholder — swap src for your image -->
+      <div class="avatar-wrapper">
+        <div class="avatar-blob"></div>
+        <img
+          src="https://api.dicebear.com/9.x/avataaars/svg?seed=portfolio&backgroundColor=000000"
+          alt="Profile illustration"
+          class="animated-image"
+        />
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <span class="section-tag">About Me</span>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I’m a passionate Software Engineer and Machine Learning Engineer based in India,I enjoy solving complex problems 
+            through scalable software systems, efficient algorithms, and user-friendly interfaces, while leveraging 
+            machine learning to create impactful and innovative solutions.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new tech, contributing to open source,
+            or applying machine learning to real-world challenges. I'm always eager to learn and grow, and I'm excited to connect with like-minded professionals.
+          </p>
+          <a href="#" class="btn btn-primary resume-button">Download Résumé</a>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-tag">HTML &amp; CSS</div>
+          <div class="skill-tag">C++</div>
+          <div class="skill-tag">MySQL</div>
+          <div class="skill-tag">Machine Learning</div>
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">Git &amp; GitHub</div>
+          <div class="skill-tag">C</div>
+          <div class="skill-tag">Deep Learning</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section class="education" id="education">
+    <div class="section-inner">
+      <span class="section-tag light">Education</span>
+      <h2 class="section-title light">Academic Background</h2>
+      <ul class="education-list">
+        <li class="education-card">
+          <div class="edu-year">2023 – 2027</div>
+          <div class="edu-details">
+            <strong>B.Tech in Artificial Intelligence</strong>
+            <span>Zakir Husain College of Engineering & Technology, AMU</span>
+            <p>Relevant coursework: Data Structures, Algorithms, Machine Learning, Artificial Intelligence, Databases, OS.</p>
+          </div>
+        </li>
+        <li class="education-card">
+          <div class="edu-year">2020 – 2022</div>
+          <div class="edu-details">
+            <strong>Higher Secondary (12th Grade)</strong>
+            <span>SVMIC Khadia</span>
+            <p>Science stream — Physics, Chemistry, Mathematics</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <span class="section-tag">Work</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <ul class="projects-grid">
+
+        <li class="project-card">
+          <div class="project-header">
+            <img src="https://api.dicebear.com/9.x/identicon/svg?seed=proj1" alt="Project 1" class="project-icon" />
+            <span class="project-year">2026</span>
+          </div>
+          <h3 class="project-name">PixelSeek</h3>
+          <p class="project-desc">PixelSeek is an AI-powered image retrieval system that allows users to search local images using natural language queries like
+            “dog playing
+            ”
+            It combines BLIP , SBERT , and LSH to convert images into searchable semantic representations.
+            The system automatically generates captions for images, transforms them into vector embeddings, and retrieves the most
+            relevant results based on user queries.
+            A Flask-based backend API and interactive web interface enable fast, and user-friendly image search from large dataset</p>
+          <div class="project-stack">
+            <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>PyTorch</span>
+          </div>
+          <a href="https://github.com/khuxhnumaa/PixelSeek" class="project-link">View Project →</a>
+        </li>
+
+        <li class="project-card">
+          <div class="project-header">
+            <img src="https://api.dicebear.com/9.x/identicon/svg?seed=proj2" alt="Project 2" class="project-icon" />
+            <span class="project-year">2025</span>
+          </div>
+          <h3 class="project-name">Students Enagement Monitoring System</h3>
+          <p class="project-desc">Developed an AI-based system to detect student engagement from classroom videos.
+            Extracted facial features (AUs, emotions, landmarks) using PyFeat.
+            Trained ML models (Linear Regression, Random Forest, Gradient Boosting) for engagement classification.
+            Implemented frame-based analysis and preprocessing directly through PyFeat.
+            Integrated deep learning models (VGG19, ResNet50, EfficientNetB0) for advanced prediction.</p>
+          <div class="project-stack">
+            <span>Python</span><span>TensorFlow</span><span>scikit-learn</span>
+          </div>
+          <a href="https://github.com/khuxhnumaa/Students-Engagement-Monitoring-" class="project-link">View Project →</a>
+        </li>
+
+        <li class="project-card">
+          <div class="project-header">
+            <img src="https://api.dicebear.com/9.x/identicon/svg?seed=proj3" alt="Project 3" class="project-icon" />
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-name">RAG Document Question Answering System</h3>
+          <p class="project-desc">Developed a Retrieval-Augmented Generation system to answer user queries from PDF, TXT, and CSV documents.
+            Implemented semantic search using vector embeddings and ChromaDB to retrieve relevant document content.
+            Integrated a Large Language Model (LLM) to generate accurate, context-aware answers, supporting efficient document
+            analysis and decision-making.</p>
+          <div class="project-stack">
+            <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Streamlit</span><span>Sentence Transformers</span><span>Groq LLM</span>
+          </div>
+          <a href="https://github.com/khuxhnumaa/RAG-Document-Q-A" class="project-link">View Project →</a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <span class="section-tag">Let's Talk</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">I'm currently open to new opportunities. Feel free to reach out!</p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-icon">✉</span>
+          <a href="mailto:you@email.com">khuxhnumaa@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact-icon">☎</span>
+          <a href="tel:+91XXXXXXXXXX">+91 8299301395</a>
+        </li>
+        <li>
+          <span class="contact-icon">⌘</span>
+          <a href="https://github.com/khuxhnumaa" target="_blank" rel="noopener">github.com/khuxhnumaa</a>
+        </li>
+        <li>
+          <span class="contact-icon">in</span>
+          <a href="https://www.linkedin.com/in/khushnuma-parveen-18b491312/" target="_blank" rel="noopener">linkedin.com/in/Khushnuma</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 Your Name. Built with ♥ and caffeine.</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/khuxhnumaa" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/khushnuma-parveen-18b491312/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://twitter.com/khuxhnumaa" target="_blank" rel="noopener">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

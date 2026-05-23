@@ -1,0 +1,39 @@
+/* ─────────────────────────────────────────────
+   ANIMATIONS.CSS  –  Portfolio Keyframes
+   ───────────────────────────────────────────── */
+
+/* Hero image bounce */
+@keyframes bounceZoom {
+    0%, 100% { transform: translateY(0)    scale(1);    }
+    50%       { transform: translateY(-10px) scale(1.05); }
+  }
+  .bounce { animation: bounceZoom 1.5s ease-in-out infinite; }
+  
+  /* Section entry (triggered by JS .reveal class) */
+  @keyframes revealUp {
+    from { opacity: 0; transform: translateY(32px); }
+    to   { opacity: 1; transform: translateY(0);    }
+  }
+  .reveal {
+    opacity: 0;
+    animation: revealUp 0.65s ease forwards;
+  }
+  
+  /* Staggered delays for lists */
+  .reveal-delay-1 { animation-delay: 0.1s; }
+  .reveal-delay-2 { animation-delay: 0.2s; }
+  .reveal-delay-3 { animation-delay: 0.3s; }
+  .reveal-delay-4 { animation-delay: 0.4s; }
+  
+  /* Pink glow pulse (use on highlighted elements) */
+  @keyframes glowPulse {
+    0%, 100% { box-shadow: 0 0 10px rgba(255,107,157,0.3); }
+    50%       { box-shadow: 0 0 28px rgba(255,107,157,0.7); }
+  }
+  .glow { animation: glowPulse 2.5s ease-in-out infinite; }
+  
+  /* Spin (use on loader icons) */
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  .spin { animation: spin 1s linear infinite; }
