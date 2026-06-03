@@ -30,27 +30,23 @@
 
   <!-- ── HERO ── -->
   <section class="hero" id="hero">
+
+    <!-- BUBBLE BACKGROUND CANVAS — added here -->
+    <canvas id="bubbles"></canvas>
+
     <div class="hero-content">
       <p class="hero-greeting">Hello, I'm</p>
       <h1 class="hero-name">Khushnuma Parveen</h1>
-      <h2 class="hero-title">Machine Learning Engineer &amp; Software Engineer</h2>
+      <h2 class="hero-title">
+        <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+      </h2>
       <p class="hero-bio">I craft beautiful digital experiences with clean code and thoughtful design.</p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-outline">Get In Touch</a>
       </div>
     </div>
-    <div class="hero-animation">
-      <!-- Animated avatar placeholder — swap src for your image -->
-      <div class="avatar-wrapper">
-        <div class="avatar-blob"></div>
-        <img
-          src="https://api.dicebear.com/9.x/avataaars/svg?seed=portfolio&backgroundColor=000000"
-          alt="Profile illustration"
-          class="animated-image"
-        />
-      </div>
-    </div>
+
     <div class="hero-scroll-hint">
       <span>Scroll</span>
       <div class="scroll-line"></div>
@@ -65,7 +61,7 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I’m a passionate Software Engineer and Machine Learning Engineer based in India,I enjoy solving complex problems 
+            I'm a passionate Software Engineer and Machine Learning Engineer based in India. I enjoy solving complex problems 
             through scalable software systems, efficient algorithms, and user-friendly interfaces, while leveraging 
             machine learning to create impactful and innovative solutions.
           </p>
@@ -73,7 +69,7 @@
             When I'm not coding, you'll find me exploring new tech, contributing to open source,
             or applying machine learning to real-world challenges. I'm always eager to learn and grow, and I'm excited to connect with like-minded professionals.
           </p>
-          <a href="#" class="btn btn-primary resume-button">Download Résumé</a>
+          <a href="https://drive.google.com/file/d/1myRkFvnwXKz4mvmbgjzF2HkEC0zDn6id/view?usp=sharing" class="btn btn-primary resume-button">Download Resume</a>
         </div>
         <div class="skills-grid">
           <div class="skill-tag">HTML &amp; CSS</div>
@@ -128,13 +124,7 @@
             <span class="project-year">2026</span>
           </div>
           <h3 class="project-name">PixelSeek</h3>
-          <p class="project-desc">PixelSeek is an AI-powered image retrieval system that allows users to search local images using natural language queries like
-            “dog playing
-            ”
-            It combines BLIP , SBERT , and LSH to convert images into searchable semantic representations.
-            The system automatically generates captions for images, transforms them into vector embeddings, and retrieves the most
-            relevant results based on user queries.
-            A Flask-based backend API and interactive web interface enable fast, and user-friendly image search from large dataset</p>
+          <p class="project-desc">An AI-powered image retrieval system that allows users to search local images using natural language queries. Combines BLIP, SBERT, and LSH to convert images into searchable semantic representations with a Flask-based backend API.</p>
           <div class="project-stack">
             <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>PyTorch</span>
           </div>
@@ -146,12 +136,8 @@
             <img src="https://api.dicebear.com/9.x/identicon/svg?seed=proj2" alt="Project 2" class="project-icon" />
             <span class="project-year">2025</span>
           </div>
-          <h3 class="project-name">Students Enagement Monitoring System</h3>
-          <p class="project-desc">Developed an AI-based system to detect student engagement from classroom videos.
-            Extracted facial features (AUs, emotions, landmarks) using PyFeat.
-            Trained ML models (Linear Regression, Random Forest, Gradient Boosting) for engagement classification.
-            Implemented frame-based analysis and preprocessing directly through PyFeat.
-            Integrated deep learning models (VGG19, ResNet50, EfficientNetB0) for advanced prediction.</p>
+          <h3 class="project-name">Students Engagement Monitoring System</h3>
+          <p class="project-desc">An AI-based system to detect student engagement from classroom videos. Extracts facial features using PyFeat and benchmarks ML models (Random Forest, Gradient Boosting) against deep learning architectures (VGG19, ResNet50, EfficientNetB0).</p>
           <div class="project-stack">
             <span>Python</span><span>TensorFlow</span><span>scikit-learn</span>
           </div>
@@ -161,15 +147,12 @@
         <li class="project-card">
           <div class="project-header">
             <img src="https://api.dicebear.com/9.x/identicon/svg?seed=proj3" alt="Project 3" class="project-icon" />
-            <span class="project-year">2023</span>
+            <span class="project-year">2026</span>
           </div>
           <h3 class="project-name">RAG Document Question Answering System</h3>
-          <p class="project-desc">Developed a Retrieval-Augmented Generation system to answer user queries from PDF, TXT, and CSV documents.
-            Implemented semantic search using vector embeddings and ChromaDB to retrieve relevant document content.
-            Integrated a Large Language Model (LLM) to generate accurate, context-aware answers, supporting efficient document
-            analysis and decision-making.</p>
+          <p class="project-desc">A Retrieval-Augmented Generation system to answer user queries from PDF, TXT, and CSV documents using semantic search with ChromaDB and a Groq LLM for accurate, context-aware answers.</p>
           <div class="project-stack">
-            <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Streamlit</span><span>Sentence Transformers</span><span>Groq LLM</span>
+            <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Streamlit</span><span>Groq LLM</span>
           </div>
           <a href="https://github.com/khuxhnumaa/RAG-Document-Q-A" class="project-link">View Project →</a>
         </li>
@@ -187,11 +170,11 @@
       <ul class="contact-list">
         <li>
           <span class="contact-icon">✉</span>
-          <a href="mailto:you@email.com">khuxhnumaa@gmail.com</a>
+          <a href="mailto:khuxhnumaa@gmail.com">khuxhnumaa@gmail.com</a>
         </li>
         <li>
           <span class="contact-icon">☎</span>
-          <a href="tel:+91XXXXXXXXXX">+91 8299301395</a>
+          <a href="tel:+918299301395">+91 8299301395</a>
         </li>
         <li>
           <span class="contact-icon">⌘</span>
@@ -208,7 +191,7 @@
   <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="footer-inner">
-      <p class="footer-copy">© 2025 Your Name. Built with ♥ and caffeine.</p>
+      <p class="footer-copy">© 2026 Khushnuma Parveen. Built with ♥ and caffeine.</p>
       <ul class="social-links">
         <li><a href="https://github.com/khuxhnumaa" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/khushnuma-parveen-18b491312/" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -218,5 +201,130 @@
   </footer>
 
   <script src="main.js"></script>
+
+  <!-- ── TYPING ANIMATION SCRIPT ── -->
+  <script>
+    const roles = [
+      "Software Developer",
+      "Machine Learning Engineer",
+      "AI Innovator"
+    ];
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const roleEl = document.getElementById('typingText');
+
+    function type() {
+      const current = roles[roleIndex];
+
+      if (isDeleting) {
+        charIndex--;
+      } else {
+        charIndex++;
+      }
+
+      roleEl.textContent = current.substring(0, charIndex);
+
+      let delay = isDeleting ? 60 : 100;
+
+      if (!isDeleting && charIndex === current.length) {
+        delay = 1800;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        delay = 300;
+      }
+
+      setTimeout(type, delay);
+    }
+
+    type();
+  </script>
+
+  <!-- ── BUBBLE BACKGROUND SCRIPT ── -->
+  <script>
+    (function () {
+      const canvas = document.getElementById('bubbles');
+      const hero   = document.getElementById('hero');
+      const ctx    = canvas.getContext('2d');
+
+      function resize() {
+        canvas.width  = hero.offsetWidth;
+        canvas.height = hero.offsetHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      function rand(a, b) { return a + Math.random() * (b - a); }
+
+      class Bubble {
+        constructor() { this.reset(true); }
+
+        reset(initial) {
+          this.r  = rand(3, 16);
+          this.x  = rand(this.r, canvas.width  - this.r);
+          this.y  = initial ? rand(0, canvas.height) : canvas.height + this.r + 10;
+          this.vx = rand(-0.15, 0.15);
+          this.vy = -rand(0.2, 0.65);
+          this.wobble      = rand(0, Math.PI * 2);
+          this.wobbleSpeed = rand(0.008, 0.022);
+
+          const isPink = Math.random() < 0.05;
+          if (isPink) {
+            this.fill    = 'rgba(255,60,110,';
+            this.stroke  = 'rgba(255,80,130,';
+            this.alpha   = rand(0.06, 0.13);
+            this.strokeA = rand(0.12, 0.22);
+          } else {
+            const g      = Math.floor(rand(18, 52));
+            this.fill    = `rgba(${g},${g},${g + 3},`;
+            this.stroke  = `rgba(${g + 20},${g + 20},${g + 24},`;
+            this.alpha   = rand(0.5, 0.85);
+            this.strokeA = rand(0.15, 0.35);
+          }
+
+          this.glint = this.r > 8 && Math.random() > 0.4;
+        }
+
+        update() {
+          this.wobble += this.wobbleSpeed;
+          this.x += this.vx + Math.sin(this.wobble) * 0.12;
+          this.y += this.vy;
+          if (this.y < -this.r * 2) this.reset(false);
+        }
+
+        draw() {
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+          ctx.fillStyle   = this.fill   + this.alpha   + ')';
+          ctx.fill();
+          ctx.strokeStyle = this.stroke + this.strokeA + ')';
+          ctx.lineWidth   = 0.6;
+          ctx.stroke();
+          if (this.glint) {
+            ctx.beginPath();
+            ctx.arc(this.x - this.r * 0.3, this.y - this.r * 0.3, this.r * 0.15, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255,255,255,0.09)';
+            ctx.fill();
+          }
+          ctx.restore();
+        }
+      }
+
+      const bubbles = Array.from({ length: 70 }, () => new Bubble());
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        bubbles.forEach(b => { b.update(); b.draw(); });
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+  </script>
+
 </body>
 </html>
